@@ -4,15 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
         
-        // --- ARITHMETIC ---
+        //arithmetic
         Arithmetic calc = new Arithmetic();
         
-        // 1. Addition
+        //add
         calc.setOperand1(15.0);
         calc.setOperand2(10.0);
         System.out.println("The Sum of [" + calc.getOperand1() + ", " + calc.getOperand2() + "] is: " + calc.add() + ".");
 
-        // 2. Division (Undefined check)
+        //divide
         calc.setOperand1(20.0);
         calc.setOperand2(0.0);
         double divResult = calc.divide();
@@ -24,14 +24,14 @@ public class Main {
             System.out.println(divResult + ".");
         }
 
-        // --- GEOMETRY ---
+        //geometry
         Geometry shape = new Geometry();
 
-        // 3. Circle Area (Positive)
+        //circle area positive
         shape.setOperand1(5.0);
         System.out.println("Calculated area for radius [" + shape.getOperand1() + "] is: " + shape.circleArea() + ".");
 
-        // 4. Circle Area (Negative)
+        //circle area negative
         shape.setOperand1(-3.0);
         double areaResult = shape.circleArea();
         
@@ -42,10 +42,10 @@ public class Main {
             System.out.println(areaResult + ".");
         }
 
-        // --- NUMBER ANALYSIS ---
+        //number analysis
         NumberAnalysis numOp = new NumberAnalysis();
 
-        // 5. Prime Check (7.0)
+        //check prime
         numOp.setOperand1(7.0);
         System.out.print("The number [" + numOp.getOperand1() + "] is: ");
         if (numOp.isPrime()) {
@@ -54,7 +54,7 @@ public class Main {
             System.out.println("Not a prime number.");
         }
 
-        // 6. Prime Check (10.0)
+        //check prime
         numOp.setOperand1(10.0);
         System.out.print("The number [" + numOp.getOperand1() + "] is: ");
         if (numOp.isPrime()) {
@@ -63,8 +63,9 @@ public class Main {
             System.out.println("Not a prime number.");
         }
 
-        // 7. Factorial (5.0)
+        //factorial
         numOp.setOperand1(5.0);
         System.out.println("The factorial of the number [" + numOp.getOperand1() + "] is: " + numOp.factorial() + ".");
     }
+
 }
